@@ -31,5 +31,19 @@ public class Main {
         } else {
             System.out.println(year + " год не является високосным");
         }
+
+        // Задание 4
+
+        int deliveryDistance = 15;
+        int days = 95;
+
+        if (deliveryDistance <= 20) {
+            days = 1;
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            days = 2;
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            days = 3;
+        }
+        System.out.println("Потребуется дней: " + days);
     }
 }
